@@ -1,0 +1,15 @@
+doctype html
+html
+	head
+		title ATG.IO
+	body
+		ul
+			if (user)
+				li
+					a(href='/logout') Logout
+			else
+				li
+					a(href='/register') Register
+				li
+					a(href='/login') Login
+		block content

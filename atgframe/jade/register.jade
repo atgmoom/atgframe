@@ -1,0 +1,12 @@
+extends layout
+
+block content
+	h2 Register
+
+	form(action='/register', method='post')
+		div
+			input(type='text', name='username', placeholder='Choose a Username')
+		div
+			input(type='password', name='password', placeholder='Choose a Password')
+		div
+			input(type='submit', value='Register')
